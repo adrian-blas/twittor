@@ -1,7 +1,15 @@
+var url = window.location.href;
+var swLocation = '/twittor/sw.js';
+
 // Valida si el navegador acepta el uso de service worker
 // Si lo soporta, registra el SW de la aplicacion
 if( navigator.serviceWorker ){
-    navigator.serviceWorker.register('sw.js');
+
+    if( url.includes('localhost')){
+        swLocation = '/sw.js';
+    }
+
+    navigator.serviceWorker.register( swLocation );
 }
 
 
