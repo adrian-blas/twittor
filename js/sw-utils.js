@@ -4,6 +4,9 @@
 // Guardar en el cache dinamico
 function actualizarCacheDinamico( dynamicCache, req, res ) {
 
+    console.log(req);
+    console.log(res);
+
     // Si la respuesta tiene datos
     if( res.ok ){
         // Almacenar en el cache si trae datos
