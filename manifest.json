@@ -1,7 +1,9 @@
 {
     "short_name": "Twittor",
     "name": "Twittor para héroes",
-    "start_url": "index.html",
+    "start_url": "/index.html",
+    "id": "/index.html",
+    "scope": "/",
     "background_color": "#3498db",
     "display": "standalone",
     "orientation": "portrait",
