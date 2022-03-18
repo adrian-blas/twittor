@@ -2,8 +2,8 @@
 self.importScripts('js/sw-utils.js');
 
 // Se guardan archivos propios de la aplicacion
-const STATIC_CACHE = 'static-v1';
-const DYNAMIC_CACHE = 'dynamic-v1';
+const STATIC_CACHE = 'static-v3';
+const DYNAMIC_CACHE = 'dynamic-v2';
 // Se guardan librerias externas normalmente usadas 
 // por ejemplo: bootstrap, fuentes de google, font awesome, etc.
 const INMUTABLE_CACHE = 'inmutable-v1';
@@ -56,6 +56,10 @@ self.addEventListener('activate', e => {
         keys.forEach( key => {
 
             if( key !== STATIC_CACHE && key.includes('static') ){
+                return caches.delete(key);
+            }
+
+            if (  key !== DYNAMIC_CACHE && key.includes('dynamic') ) {
                 return caches.delete(key);
             }
 
