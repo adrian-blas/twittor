@@ -33,9 +33,6 @@ var txtMensaje  = $('#txtMensaje');
 // El usuario, contiene el ID del héroe seleccionado
 var usuario;
 
-
-
-
 // ===== Codigo de la aplicación
 
 function crearMensajeHTML(mensaje, personaje) {
@@ -62,8 +59,6 @@ function crearMensajeHTML(mensaje, personaje) {
 
 }
 
-
-
 // Globals
 function logIn( ingreso ) {
 
@@ -84,7 +79,6 @@ function logIn( ingreso ) {
     }
 
 }
-
 
 // Seleccion de personaje
 avatarBtns.on('click', function() {

@@ -1,8 +1,8 @@
 // imports
-importScripts('./js/sw-utils.js');
+self.importScripts('js/sw-utils.js');
 
 // Se guardan archivos propios de la aplicacion
-const STATIC_CACHE = 'static-v2';
+const STATIC_CACHE = 'static-v3';
 const DYNAMIC_CACHE = 'dynamic-v1';
 // Se guardan librerias externas normalmente usadas 
 // por ejemplo: bootstrap, fuentes de google, font awesome, etc.
